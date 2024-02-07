@@ -9,26 +9,51 @@ namespace MoisesCT.SpritesShaderGraph.RadialFill
         [SerializeField] [Range(0, 360f)] private float _originAngle;
 
         private SpriteRenderer _renderer;
+        private float _oldFill;
+        private bool _oldClockwise;
+        private float _oldOriginAngle;
 
-        private void OnValidate()
+        private void Awake()
         {
             _renderer = GetComponent<SpriteRenderer>();
+            _oldFill = -1f;
+            _oldClockwise = !_clockwise;
+            _oldOriginAngle = -1f;
         }
 
-        public void UpdateFillAmount()
+        private void Update()
         {
-            _renderer.sharedMaterial.SetFloat("_FillAmount", _fill);
+            if (_oldFill != _fill)
+            {
+                _oldFill = _fill;
+                UpdateFillAmount();
+            }
+            if (_oldClockwise != _clockwise)
+            {
+                _oldClockwise = _clockwise;
+                UpdateClockwise();
+            }
+            if (_oldOriginAngle != _originAngle)
+            {
+                _oldOriginAngle = _originAngle;
+                UpdateOriginAngle();
+            }
         }
 
-        public void UpdateClockwise()
+        private void UpdateFillAmount()
+        {
+            _renderer.material.SetFloat("_FillAmount", _fill);
+        }
+
+        private void UpdateClockwise()
         {
             float numBool = _clockwise ? 1f : 0f;
-            _renderer.sharedMaterial.SetFloat("_Clockwise", numBool);
+            _renderer.material.SetFloat("_Clockwise", numBool);
         }
 
-        public void UpdateOriginAngle()
+        private void UpdateOriginAngle()
         {
-            _renderer.sharedMaterial.SetFloat("_OriginAngle", _originAngle);
+            _renderer.material.SetFloat("_OriginAngle", _originAngle);
         }
     }
 

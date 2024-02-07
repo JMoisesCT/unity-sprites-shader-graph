@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RadialFillCoin
+  m_Name: RadialFill
   m_Shader: {fileID: -6465566751694194690, guid: 0b5bfcb6f5297d64a916048813fb3770, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -55,7 +55,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Clockwise: 0
-    - _FillAmount: 0.521
-    - _OriginAngle: 143
+    - _FillAmount: 1
+    - _OriginAngle: 0
     m_Colors: []
   m_BuildTextureStacks: []
