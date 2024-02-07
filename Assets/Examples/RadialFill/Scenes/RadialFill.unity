@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 300667456}
   - component: {fileID: 300667455}
+  - component: {fileID: 300667457}
   m_Layer: 0
   m_Name: CoinSprite
   m_TagString: Untagged
@@ -160,7 +161,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: cb7eb059604222f42aa579f7a8081261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -207,6 +208,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &300667457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300667454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7205ccb628960428e9ed12ffaeae64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fill: 0
+  _clockwise: 0
+  _originAngle: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083602065}
   - component: {fileID: 1083602064}
+  - component: {fileID: 1083602066}
   m_Layer: 0
   m_Name: BowlingBallSprite
   m_TagString: Untagged
@@ -381,7 +398,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: cb7eb059604222f42aa579f7a8081261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -428,6 +445,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1083602066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083602063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7205ccb628960428e9ed12ffaeae64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fill: 0.86
+  _clockwise: 1
+  _originAngle: 109
 --- !u!1 &1632994944
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1632994946}
   - component: {fileID: 1632994945}
+  - component: {fileID: 1632994947}
   m_Layer: 0
   m_Name: BallSprite
   m_TagString: Untagged
@@ -465,7 +498,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: cb7eb059604222f42aa579f7a8081261, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -512,6 +545,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1632994947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632994944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7205ccb628960428e9ed12ffaeae64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fill: 0.316
+  _clockwise: 1
+  _originAngle: 139
 --- !u!1 &1741097953
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,8 +657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb7205ccb628960428e9ed12ffaeae64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fill: 0.234
-  _clockwise: 0
+  _fill: 1
+  _clockwise: 1
   _originAngle: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
